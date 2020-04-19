@@ -1,6 +1,19 @@
 [package]
 name = "ruspiro-gpio-hal"
-version = "0.0.1"
+authors = ["André Borrmann <pspwizard@gmx.de>"]
+version = "0.1.0"
+description = """
+Harware Abstraction of a GPIO peripheral as it is used in embedded hardware like Raspberry Pi.
+Built your bare-metal GPIO implementation based on the provided traits. The one for the Raspberry
+Pi is already existing here: [ruspiro-gpio](https://crates.io/crates/ruspiro-gpio).
+"""
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/RusPiRo/ruspiro-gpio-hal/tree/v0.1.0"
+documentation = "https://docs.rs/ruspiro-gpio-hal/0.1"
+readme = "README.md"
+keywords = ["RusPiRo", "gpio", "HAL", "baremetal"]
+categories = ["no-std", "embedded"]
+edition = "2018"
 publish = false
 
 [lib]

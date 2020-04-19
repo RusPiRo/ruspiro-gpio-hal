@@ -18,8 +18,7 @@
 
 extern crate alloc;
 use alloc::boxed::Box;
-extern crate ruspiro_core;
-use ruspiro_core::error::*;
+use ruspiro_error::*;
 
 /// The representation of a generic GPIO PIN
 pub trait GpioPin {
