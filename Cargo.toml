@@ -6,6 +6,6 @@ publish = false
 [lib]
 
 [dependencies]
-ruspiro-core = { path = "../core" }
+ruspiro-error = { path = "../error", version = "0.1" }
 
 [features]
