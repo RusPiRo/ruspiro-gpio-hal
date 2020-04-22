@@ -21,12 +21,12 @@ pub trait HalGpioPin {
     /// re-configure the [HalGpioPin] as an Input pin. This is a stateful operation at the hardware layer
     /// so even if the [HalGpioPin] get's out of scope this setting remains valid
     /// TODO: verify if this is a valid/desired appraoch
-    fn into_input(self) -> Box<dyn HalGpioPinInput>;
+    fn into_input(self: Box<Self>) -> Box<dyn HalGpioPinInput>;
 
     /// re-configure the [HalGpioPin] as an Output pin. This is a stateful operation at the hardware layer
     /// so even if the [HalGpioPin] get's out of scope this setting remains valid
     /// TODO: verify if this is a valid/desired appraoch
-    fn into_output(self) -> Box<dyn HalGpioPinOutput>;
+    fn into_output(self: Box<Self>) -> Box<dyn HalGpioPinOutput>;
 
     /// re-configure the [HalGpioPin] with an alternative function. This is a stateful operation at the hardware layer
     /// so even if the [HalGpioPin] get's out of scope this setting remains valid.
